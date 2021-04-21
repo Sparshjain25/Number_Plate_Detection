@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Cellar Tech, Number plate detection,Object Detection, Human behaviour">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>CellarTech - Changing the way how world works</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/static/logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/animate.css">
+    <link rel="stylesheet" href="/static/LineIcons.css">
+    <link rel="stylesheet" href="/static/main.css">    
+    <link rel="stylesheet" href="/static/responsive.css">
+
+  </head>
+  
+  <body>
+
+    <!-- Header Section Start -->
+    <header id="home" class="hero-area">    
+      <div class="overlay">
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <a href="index.html" class="navbar-brand"><img src="/static/logo.png" style="max-height:60px" alt=""></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#about">About</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#feature">Product</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#services">Service</a>
+              </li>       
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#team">Team</a>
+              </li> 
+               </ul>
+          </div>
+        </div>
+      </nav>  
+      <div class="container">      
+        <div class="row space-100">
+          <div class="col-lg-6 col-md-12 col-xs-12">
+            <div class="contents">
+              <h2 class="head-title">Detecting objects at speed of light</h2>
+              <p>We are a leading firm in making India digitaly competent</p>
+              <div class="header-button">
+                <a  rel="nofollow" href="#team"  class="btn btn-border-filled page-scroll">Our Team</a>
+                <a  rel="nofollow" href="#feature"  class="btn btn-border page-scroll">Upload File</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 p-0">
+            <div class="intro-img">
+              <img src="/static/intro.png" style="max-height: 400px;" alt="">
+            </div>            
+          </div>
+        </div> 
+      </div>             
+    </header>
+    <!-- Header Section End --> 
+    <div class="main container" id="feature" style="margin-top: 30px;">
+      <section class="iupload">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="features-text section-header text-center">  
+              <div>   
+                <h2 class="section-title">Number Plate Detection</h2>
+                <div class="desc-text">
+                  <p>Here is a demo of Our Best Performing Feature</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+        </div>     
+        
+<div class="row">
+    <div class="img-part col-md-6">
+            <div class="image-part">
+              <video autoplay id="video" poster="https://img.freepik.com/free-vector/group-young-people-posing-photo_52683-18824.jpg?size=338&ext=jpg"></video>
+              <img src="" id="photo">
+              <canvas style="display:none;" id="canvas"></canvas>
+            </div>
+            <div class="btn-part">
+              <form id="upload-data pt-3" class="">
+                <div class="input-group mt-3 row">
+                  <button type="button" class="btn btn-common col-md-5 col-xs-5 ml-3 mr-4" id="uload" style="border:0;border-radius: 4px;">Upload</button>
+                  <button id="send" type="button" class="btn btn-rm col-md-5 col-xs-5" style="border:0;border-radius: 4px;">Predict</button>
+                </div>
+  
+  
+  
+  
+  
+  
+                <!-- change url value  -->
+          <input type="hidden" class="form-control mr-2" id="url" placeholder="Enter REST Api url..." value="../predict"/>
+                <input name="upload" type="file" id="fileinput" style="position:absolute;top:-500px;opacity:0"/><br/>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-12 right-part">
+            <h5 class="mb-2"><center id="predictionresulttitle">Prediction Result</center></h5>
+            <div class="row">
+              <div class="res-part col-md-5 col-xs-12"><div class="jsonRes"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Services Section Start -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="features-text section-header text-center">  
+              <div>   
+                <h2 class="section-title">Services We Provide</h2>
+                <div class="desc-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br> eiusmod tempor incididunt ut labore et dolore.</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+        </div>
+    
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="lni-cog"></i>
+              </div>
+              <h4>Object Detection</h4>
+              <p>Detecting Objects for Government and companies</p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="lni-brush"></i>
+              </div>
+              <h4>Number Plate Detection</h4>
+              <p>Our Technology is being used in Traffic control in big cities </p>
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="services-item text-center">
+              <div class="icon">
+                <i class="lni-heart"></i>
+              </div>
+              <h4>Human Behavior Detection</h4>
+              <p>Our Technoligies are used to detect human behaviours by psychologists</p>
+            </div>
+          </div>
+          <!-- End Col -->
+
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+
+
+    <!-- About Section Start -->
+    <section id="about">
+      <div class="container">
+
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12 pl-0 pt-70 pr-5">
+            <div class="business-item-img">
+              <img src="/static/business-img.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12 pl-4">
+            <div class="business-item-info">
+              <h3>Crafted For Making India Safe by our Digital Products</h3>
+              <p>We are on a mission to make India safer than ever before. Our services are trusted by Government and big Companies. We offer wide variety of services like Car Detection, Number Detection, Human Behaviour Prediction. </p>
+
+            </div>
+          </div>
+          <!-- End Col -->
+
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+   
+    <!-- Team section Start -->
+    <section id="team" class="section">
+      <div class="container">
+        <!-- Start Row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="team-text section-header text-center">  
+              <div>   
+                <h2 class="section-title">Team Members</h2>
+                <div class="desc-text">
+                  <p>We have team of experts</p>  
+                  <p>Our Team is continously working to make our products easy to use</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+        </div>
+        <!-- End Row -->
+        <!-- Start Row -->
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <div class="team-thumb">
+                <img src="/static/tashneet.jpg" style="width:263px;height:310px;" class="img-fluid" alt="">
+              </div>
+
+              <div class="team-details">
+              <div class="team-social-icons">
+                  <ul class="social-list">
+                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
+                  </ul>
+                </div> 
+                <div class="team-inner text-center">
+                  <h5 class="team-title">Tashneet Singh Chawla</h5>
+                  <p>Lead Backend Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Start Col -->
+ 
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <div class="team-thumb">
+                <img src="/static/sparsh.PNG" style="width:263px;height:310px;" class="img-fluid" alt="">
+              </div>
+
+              <div class="team-details">
+              <div class="team-social-icons">
+                  <ul class="social-list">
+                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
+                  </ul>
+                </div>
+                <div class="team-inner text-center">
+                  <h5 class="team-title">Sparsh Jain</h5>
+                  <p>Backend Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Start Col -->
+ 
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <div class="team-thumb">
+                <img src="/static/nikhil.jpg" style="width:263px;height:310px;" class="img-fluid" alt="">
+              </div>
+
+              <div class="team-details">
+              <div class="team-social-icons">
+                  <ul class="social-list">
+                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
+                  </ul>
+                </div>
+                <div class="team-inner text-center">
+                  <h5 class="team-title">Nikhil Tale</h5>
+                  <p>Lead Frontend Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <div class="team-thumb">
+                <img src="/static/rishikesh.jpg" style="width:263px;height:310px;" class="img-fluid" alt="">
+              </div>
+
+              <div class="team-details">
+              <div class="team-social-icons">
+                  <ul class="social-list">
+                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
+                  </ul>
+                </div>
+                <div class="team-inner text-center">
+                  <h5 class="team-title">Rishikesh Rathi</h5>
+                  <p>Marketing Head</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Start Col -->
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <div class="team-thumb">
+                <img src="/static/archit.jpg" style="width:263px;height:310px;" class="img-fluid" alt="">
+              </div>
+
+              <div class="team-details">
+                <div class="team-social-icons">
+                  <ul class="social-list">
+                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-twitter-filled"></i></a></li>
+                    <li><a href="#"><i class="lni-google-plus"></i></a></li>
+                  </ul>
+                </div>
+                <div class="team-inner text-center">
+                  <h5 class="team-title">Archit Chibbar</h5>
+                  <p>Support Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Start Col -->
+ 
+
+        </div>
+        <!-- End Row -->
+      </div>
+    </section>
+    <!-- Team section End -->
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <!-- Start Row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-text section-header text-center">  
+              <div>   
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="desc-text">
+                  <p>We are here to help you in any conditions</p>  
+                  <p>Our Customer support team will reach to you with blazing speed</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+        </div>
+        <!-- End Row -->
+        <!-- Start Row -->
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12">
+          <form id="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>                                 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" name="msg_subject" required data-error="Please enter your subject">
+                  <div class="help-block with-errors"></div>
+                </div> 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                  <div class="help-block with-errors"></div>
+                </div>                                 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Product Name" id="product" class="form-control" name="product" required data-error="Please enter which Product you are using">
+                  <div class="help-block with-errors"></div>
+                </div> 
+              </div>
+              <div class="col-md-12">
+                <div class="form-group"> 
+                  <textarea class="form-control" id="message"  name="message" placeholder="Write Message" rows="4" data-error="Write your message" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button">
+                  <button class="btn btn-common" id="submit" type="submit">Submit</button>
+                  <div id="msgSubmit" class="h3 hidden"></div> 
+                  <div class="clearfix"></div> 
+                </div>
+              </div>
+            </div>            
+          </form>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-1">
+            
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-12">
+            <div class="contact-img">
+              <img src="/static/01.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-1">
+          </div>
+          <!-- End Col -->
+
+        </div>
+        <!-- End Row -->
+      </div>
+    </section>
+    <!-- Contact Us Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <!-- Footer Area Start -->
+      <section id="footer-Content">
+        <div class="container">
+          <!-- Start Row -->
+          <div class="row">
+
+          <!-- Start Col -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              
+              <div class="footer-logo">
+               <img src="/static/logo.png" style="max-width: 200px;" alt="">
+              </div>
+            </div>
+             <!-- End Col -->
+              <!-- Start Col -->
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Company</h3>
+                <ul class="menu">
+                  <li><a href="#">  - About Us</a></li>
+                  <li><a href="#">- Career</a></li>
+                  <li><a href="#">- Press</a></li>
+                </ul>
+              </div>
+            </div>
+             <!-- End Col -->
+              <!-- Start Col -->
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Product</h3>
+                <ul class="menu">
+                  <li><a href="#">  - Customer Service</a></li>
+                  <li><a href="#">- Enterprise</a></li>
+                  <li><a href="#">- Price</a></li>
+                  <li><a href="#">- Scurity</a></li>
+                  <li><a href="#">- Why Cellar Tech?</a></li>
+                </ul>
+              </div>
+            </div>
+             <!-- End Col -->
+              <!-- Start Col -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Subscribe Now</h3>
+                <p>Get our Latest Updates directly reach to you </p>
+                <div class="subscribe-area">
+                  <input type="email" class="form-control" placeholder="Enter Email">
+                  <span><i class="lni-chevron-right"></i></span>
+                </div>
+              </div>
+            </div>
+            <!-- End Col -->
+          </div>
+          <!-- End Row -->
+        </div>
+        <!-- Copyright Start  -->
+
+        <div class="copyright">
+          <div class="container">
+            <!-- Star Row -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="site-info text-center">
+                  <p>Crafted by <a href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+                </div>              
+                
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Row -->
+          </div>
+        </div>
+      <!-- Copyright End -->
+      </section>
+      <!-- Footer area End -->
+      
+    </footer>
+    <!-- Footer Section End --> 
+
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+    </a> 
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="/static/jquery-min.js"></script>
+    <script src="/static/popper.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>     
+    <script src="/static/jquery.nav.js"></script>    
+    <script src="/static/scrolling-nav.js"></script>    
+    <script src="/static/jquery.easing.min.js"></script>     
+    <script src="/static/nivo-lightbox.js"></script>     
+    <script src="/static/jquery.magnific-popup.min.js"></script>       
+    <script src="/static/main.js"></script>
+
+  </body>
+</html>
